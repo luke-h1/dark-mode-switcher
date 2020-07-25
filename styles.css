@@ -1,0 +1,123 @@
+* { 
+    padding: 0 ; 
+    margin: 0 ; 
+}
+
+:root {
+    --mainColor: #eaeaea;
+    --secondaryColor: #fff;
+
+    --borderColor: #c1c1c1;
+
+    --mainText: #000;
+    --secondaryText: #4b5156;
+
+    --theme-dot-border: #24292e;
+
+    --previewBg: rgb(251, 249, 243, 0.8);
+
+    --previewShadow: #f0ead6;
+
+    --buttonColor: #000;
+}
+
+
+a {
+    text-decoration: none;
+    color: #17a2b8;
+}
+
+ul {
+    list-style: none;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body * { 
+    transition: 0.5s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong
+{
+    color: var(--mainText);
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
+}
+
+
+span,
+label,
+input,
+textarea,
+ul,
+li {
+    color: var(--secondaryText);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.left-column {
+    grid-area: left-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+#theme-options-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+.theme-dot {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border: 2px solid var(--theme-dot-border);
+    background-color: #000;
+    border-radius: 50%;
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.theme-dot:hover {
+    border-width: 5px;
+}
+
+#light-mode {
+    background-color: #fff;
+}
+
+#blue-mode {
+    background-color: #192734;
+}
+
+#green-mode {
+    background-color: #78866b;
+}
+
+#purple-mode {
+    background-color: #7e4c74;
+}
+
+#settings-note {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+#theme-options-wrapper {
+    display: flex;
+    justify-content: center;
+}

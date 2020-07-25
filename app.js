@@ -21,15 +21,9 @@ for (var i = 0; themeDots.length > i; i++) {
 function setTheme(mode) {
     if (mode == 'light') {
         document.getElementById('theme-style').href = 'styles.css';
-    } else if (mode == 'blue') {
-        document.getElementById('theme-style').href = 'blue.css';
-    } else if (mode == 'green') {
-        document.getElementById('theme-style').href = 'green.css';
-    } else if (mode == 'purple') {
-        document.getElementById('theme-style').href = 'purple.css';
-    }else { 
-        document.getElementById('theme-style').href = 'dark-mode.css'
-    }
+    } else if (mode == 'dark') {
+        document.getElementById('theme-style').href = 'dark-mode.css';
+    } 
 
     localStorage.setItem('theme', mode) // KEY // MODE   
 }
